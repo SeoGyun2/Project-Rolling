@@ -1,0 +1,96 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: auto;
+}
+
+.card {
+    width: 100%;
+    max-width: 275px;
+    height: 260px;
+    border-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card.purple {
+    background-color: #ECD9FF;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 24px 0 24px;
+    gap: 43px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    flex-grow: 1;
+    max-width: 227px;
+    /* 경계선 너비 변경이 안됨. */
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.author-count {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.card-footer {
+    padding: 16px;
+    border-top: 1px solid #ddd;
+}
+
+.reaction-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.icon {
+    background: rgba(0, 0, 0, 0.54);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 199px;
+    height: 36px;
+    border-radius: 18px;
+    padding: 0 16px;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: background-color 0.3s ease;
+    /* 버튼 클릭 효과 */
+}
+
+
+
+.icon:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
